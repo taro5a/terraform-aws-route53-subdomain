@@ -5,6 +5,7 @@ variable "destination_org" {
 
 variable "gh_token" {
   description = "Github token with permissions to create and delete repos."
+  sensitive   = true
 }
 
 variable "waypoint_application" {
@@ -19,7 +20,6 @@ variable "waypoint_application" {
 
 variable "domain" {
   description = "The top level domain name used for redirects."
-  default     = "hathatgames.com"
 }
 
 variable "aws_region" {
@@ -29,4 +29,5 @@ variable "aws_region" {
 
 variable "route53_zone_id" {
   description = "The premade route53 zone ID. The zone is created outside of here so that the domain config can be set up beforehand."
+  sensitive   = true
 }
