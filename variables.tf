@@ -24,7 +24,7 @@ variable "domain" {
 
 variable "aws_region" {
   description = "The AWS region to contain resources."
-  default     = "us-east-1"
+  default     = "ap-northeast-1"
 }
 
 variable "route53_zone_id" {
